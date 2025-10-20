@@ -320,20 +320,6 @@ class TodoApp {
     }
 }
 
-// Add shake animation to CSS dynamically
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        25% { transform: translateX(-5px); }
-        75% { transform: translateX(5px); }
-    }
-    .shake {
-        animation: shake 0.3s ease-in-out;
-    }
-`;
-document.head.appendChild(style);
-
 // Initialize the app when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     new TodoApp();
